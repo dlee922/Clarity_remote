@@ -13,6 +13,7 @@
 		839867EF2A3D0BCE004A5C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839867ED2A3D0BCE004A5C40 /* Main.storyboard */; };
 		839867F12A3D0BCF004A5C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839867F02A3D0BCF004A5C40 /* Assets.xcassets */; };
 		839867F42A3D0BCF004A5C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839867F22A3D0BCF004A5C40 /* LaunchScreen.storyboard */; };
+		839867FC2A3D0C4A004A5C40 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839867FB2A3D0C4A004A5C40 /* LoginScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		839867F02A3D0BCF004A5C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839867F32A3D0BCF004A5C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839867F52A3D0BCF004A5C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839867FB2A3D0C4A004A5C40 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				839867E72A3D0BCE004A5C40 /* AppDelegate.swift */,
 				839867E92A3D0BCE004A5C40 /* SceneDelegate.swift */,
 				839867EB2A3D0BCE004A5C40 /* ViewController.swift */,
+				839867FB2A3D0C4A004A5C40 /* LoginScreenView.swift */,
 				839867ED2A3D0BCE004A5C40 /* Main.storyboard */,
 				839867F02A3D0BCF004A5C40 /* Assets.xcassets */,
 				839867F22A3D0BCF004A5C40 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839867FC2A3D0C4A004A5C40 /* LoginScreenView.swift in Sources */,
 				839867EC2A3D0BCE004A5C40 /* ViewController.swift in Sources */,
 				839867E82A3D0BCE004A5C40 /* AppDelegate.swift in Sources */,
 				839867EA2A3D0BCE004A5C40 /* SceneDelegate.swift in Sources */,
