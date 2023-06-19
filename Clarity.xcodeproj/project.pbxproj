@@ -14,11 +14,20 @@
 		839867F12A3D0BCF004A5C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839867F02A3D0BCF004A5C40 /* Assets.xcassets */; };
 		839867F42A3D0BCF004A5C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839867F22A3D0BCF004A5C40 /* LaunchScreen.storyboard */; };
 		839867FC2A3D0C4A004A5C40 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839867FB2A3D0C4A004A5C40 /* LandingPageView.swift */; };
-		839867FE2A3E945E004A5C40 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 839867FD2A3E945E004A5C40 /* GoogleService-Info (1).plist */; };
 		839868012A3E94A6004A5C40 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 839868002A3E94A6004A5C40 /* FirebaseAuth */; };
 		839868032A3E94A6004A5C40 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 839868022A3E94A6004A5C40 /* FirebaseFirestore */; };
 		839868052A3E94A6004A5C40 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 839868042A3E94A6004A5C40 /* FirebaseFirestoreSwift */; };
 		839868072A3E94A6004A5C40 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 839868062A3E94A6004A5C40 /* FirebaseStorage */; };
+		8398680E2A3FFC4D004A5C40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398680D2A3FFC4C004A5C40 /* LoginView.swift */; };
+		839868102A3FFC61004A5C40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398680F2A3FFC61004A5C40 /* LoginViewController.swift */; };
+		839868132A3FFC8E004A5C40 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868122A3FFC8E004A5C40 /* RegisterViewController.swift */; };
+		839868152A3FFC9E004A5C40 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868142A3FFC9E004A5C40 /* RegisterView.swift */; };
+		8398681A2A40FF2C004A5C40 /* RegisterFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868192A40FF2C004A5C40 /* RegisterFirebaseManager.swift */; };
+		8398681C2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398681B2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift */; };
+		8398681E2A4103E8004A5C40 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398681D2A4103E8004A5C40 /* HomePageView.swift */; };
+		839868202A4103F6004A5C40 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398681F2A4103F6004A5C40 /* HomePageViewController.swift */; };
+		839868242A41083A004A5C40 /* LoginFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868232A41083A004A5C40 /* LoginFirebaseManager.swift */; };
+		839868262A410BE4004A5C40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 839868252A410BE4004A5C40 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +40,16 @@
 		839867F32A3D0BCF004A5C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839867F52A3D0BCF004A5C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839867FB2A3D0C4A004A5C40 /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
-		839867FD2A3E945E004A5C40 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		8398680D2A3FFC4C004A5C40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8398680F2A3FFC61004A5C40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		839868122A3FFC8E004A5C40 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		839868142A3FFC9E004A5C40 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		839868192A40FF2C004A5C40 /* RegisterFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFirebaseManager.swift; sourceTree = "<group>"; };
+		8398681B2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoPickerManager.swift; sourceTree = "<group>"; };
+		8398681D2A4103E8004A5C40 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		8398681F2A4103F6004A5C40 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		839868232A41083A004A5C40 /* LoginFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseManager.swift; sourceTree = "<group>"; };
+		839868252A410BE4004A5C40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,17 +86,90 @@
 		839867E62A3D0BCE004A5C40 /* Clarity */ = {
 			isa = PBXGroup;
 			children = (
+				8398680B2A3FFC1D004A5C40 /* Landing Page */,
+				839868162A3FFCA1004A5C40 /* Register Page */,
+				839868112A3FFC64004A5C40 /* Login Page */,
+				839868212A4103F9004A5C40 /* Home Page */,
 				839867E72A3D0BCE004A5C40 /* AppDelegate.swift */,
 				839867E92A3D0BCE004A5C40 /* SceneDelegate.swift */,
-				839867EB2A3D0BCE004A5C40 /* ViewController.swift */,
-				839867FB2A3D0C4A004A5C40 /* LandingPageView.swift */,
 				839867ED2A3D0BCE004A5C40 /* Main.storyboard */,
 				839867F02A3D0BCF004A5C40 /* Assets.xcassets */,
 				839867F22A3D0BCF004A5C40 /* LaunchScreen.storyboard */,
 				839867F52A3D0BCF004A5C40 /* Info.plist */,
-				839867FD2A3E945E004A5C40 /* GoogleService-Info (1).plist */,
+				839868252A410BE4004A5C40 /* GoogleService-Info.plist */,
 			);
 			path = Clarity;
+			sourceTree = "<group>";
+		};
+		8398680B2A3FFC1D004A5C40 /* Landing Page */ = {
+			isa = PBXGroup;
+			children = (
+				8398680C2A3FFC25004A5C40 /* Views */,
+				839867EB2A3D0BCE004A5C40 /* ViewController.swift */,
+			);
+			path = "Landing Page";
+			sourceTree = "<group>";
+		};
+		8398680C2A3FFC25004A5C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				839867FB2A3D0C4A004A5C40 /* LandingPageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		839868112A3FFC64004A5C40 /* Login Page */ = {
+			isa = PBXGroup;
+			children = (
+				839868182A3FFCB9004A5C40 /* Views */,
+				8398680F2A3FFC61004A5C40 /* LoginViewController.swift */,
+				839868232A41083A004A5C40 /* LoginFirebaseManager.swift */,
+			);
+			path = "Login Page";
+			sourceTree = "<group>";
+		};
+		839868162A3FFCA1004A5C40 /* Register Page */ = {
+			isa = PBXGroup;
+			children = (
+				839868172A3FFCB4004A5C40 /* Views */,
+				839868122A3FFC8E004A5C40 /* RegisterViewController.swift */,
+				8398681B2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift */,
+				839868192A40FF2C004A5C40 /* RegisterFirebaseManager.swift */,
+			);
+			path = "Register Page";
+			sourceTree = "<group>";
+		};
+		839868172A3FFCB4004A5C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				839868142A3FFC9E004A5C40 /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		839868182A3FFCB9004A5C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8398680D2A3FFC4C004A5C40 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		839868212A4103F9004A5C40 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				839868222A410408004A5C40 /* Views */,
+				8398681F2A4103F6004A5C40 /* HomePageViewController.swift */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		839868222A410408004A5C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8398681D2A4103E8004A5C40 /* HomePageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				839867F42A3D0BCF004A5C40 /* LaunchScreen.storyboard in Resources */,
+				839868262A410BE4004A5C40 /* GoogleService-Info.plist in Resources */,
 				839867F12A3D0BCF004A5C40 /* Assets.xcassets in Resources */,
 				839867EF2A3D0BCE004A5C40 /* Main.storyboard in Resources */,
-				839867FE2A3E945E004A5C40 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839868102A3FFC61004A5C40 /* LoginViewController.swift in Sources */,
+				839868242A41083A004A5C40 /* LoginFirebaseManager.swift in Sources */,
+				8398681A2A40FF2C004A5C40 /* RegisterFirebaseManager.swift in Sources */,
+				8398681C2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift in Sources */,
 				839867FC2A3D0C4A004A5C40 /* LandingPageView.swift in Sources */,
+				839868132A3FFC8E004A5C40 /* RegisterViewController.swift in Sources */,
 				839867EC2A3D0BCE004A5C40 /* ViewController.swift in Sources */,
 				839867E82A3D0BCE004A5C40 /* AppDelegate.swift in Sources */,
+				839868152A3FFC9E004A5C40 /* RegisterView.swift in Sources */,
+				839868202A4103F6004A5C40 /* HomePageViewController.swift in Sources */,
+				8398680E2A3FFC4D004A5C40 /* LoginView.swift in Sources */,
+				8398681E2A4103E8004A5C40 /* HomePageView.swift in Sources */,
 				839867EA2A3D0BCE004A5C40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

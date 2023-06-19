@@ -1,25 +1,25 @@
 //
-//  ViewController.swift
+//  HomePageViewController.swift
 //  Clarity
 //
-//  Created by Daniel Lee on 6/16/23.
+//  Created by Daniel Lee on 6/19/23.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomePageViewController: UIViewController {
 
-    let landingPageScreen = LandingPageView()
+    let homeScreen = HomePageView()
     
     override func loadView() {
-        view = landingPageScreen
+        view = homeScreen
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
+    
 
 }
-
