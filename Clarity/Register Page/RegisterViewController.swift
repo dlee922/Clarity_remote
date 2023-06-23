@@ -8,6 +8,7 @@
 import UIKit
 import PhotosUI
 import FirebaseStorage
+import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
 
@@ -17,12 +18,15 @@ class RegisterViewController: UIViewController {
     
     var pickedImage:UIImage?
     
+    let database = Firestore.firestore()
+    
     override func loadView() {
         view = registerScreen
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Register"
 
         // Do any additional setup after loading the view.
         registerScreen.buttonRegister.addTarget(self, action: #selector(onButtonRegisterTapped), for: .touchUpInside)

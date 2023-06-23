@@ -18,6 +18,7 @@ extension LoginViewController {
                     print("User authenticated")
                     //MARK: maybe add progress indicator here?
                     let homePageController = HomePageViewController()
+                    homePageController.currentUser = Auth.auth().currentUser
                     self.navigationController?.pushViewController(homePageController, animated: true)
                 }
                 else {

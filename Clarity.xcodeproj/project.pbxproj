@@ -27,7 +27,19 @@
 		8398681E2A4103E8004A5C40 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398681D2A4103E8004A5C40 /* HomePageView.swift */; };
 		839868202A4103F6004A5C40 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398681F2A4103F6004A5C40 /* HomePageViewController.swift */; };
 		839868242A41083A004A5C40 /* LoginFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868232A41083A004A5C40 /* LoginFirebaseManager.swift */; };
-		839868262A410BE4004A5C40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 839868252A410BE4004A5C40 /* GoogleService-Info.plist */; };
+		839868282A411CD2004A5C40 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868272A411CD2004A5C40 /* ProfileView.swift */; };
+		8398682A2A411CDF004A5C40 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868292A411CDF004A5C40 /* ProfileViewController.swift */; };
+		8398682E2A4283CA004A5C40 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398682D2A4283CA004A5C40 /* Configs.swift */; };
+		839868302A428683004A5C40 /* CollageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398682F2A428683004A5C40 /* CollageTableViewCell.swift */; };
+		839868322A4286AD004A5C40 /* AffirmationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868312A4286AD004A5C40 /* AffirmationsTableViewCell.swift */; };
+		839868342A4390D8004A5C40 /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868332A4390D8004A5C40 /* Affirmation.swift */; };
+		839868382A43993F004A5C40 /* AffirmationsTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868372A43993F004A5C40 /* AffirmationsTableViewManager.swift */; };
+		8398683E2A44E6AD004A5C40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8398683D2A44E6AD004A5C40 /* GoogleService-Info.plist */; };
+		839868402A4523B1004A5C40 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398683F2A4523B1004A5C40 /* JournalView.swift */; };
+		839868422A4524A4004A5C40 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868412A4524A4004A5C40 /* JournalViewController.swift */; };
+		839868462A4524DD004A5C40 /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868452A4524DD004A5C40 /* JournalTableViewCell.swift */; };
+		839868482A4524FC004A5C40 /* JournalTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868472A4524FC004A5C40 /* JournalTableViewManager.swift */; };
+		8398684A2A458B5E004A5C40 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868492A458B5E004A5C40 /* Journal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +61,19 @@
 		8398681D2A4103E8004A5C40 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		8398681F2A4103F6004A5C40 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		839868232A41083A004A5C40 /* LoginFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseManager.swift; sourceTree = "<group>"; };
-		839868252A410BE4004A5C40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		839868272A411CD2004A5C40 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		839868292A411CDF004A5C40 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8398682D2A4283CA004A5C40 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Configs.swift; path = "View Profile Page/Views/Configs.swift"; sourceTree = "<group>"; };
+		8398682F2A428683004A5C40 /* CollageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageTableViewCell.swift; sourceTree = "<group>"; };
+		839868312A4286AD004A5C40 /* AffirmationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsTableViewCell.swift; sourceTree = "<group>"; };
+		839868332A4390D8004A5C40 /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		839868372A43993F004A5C40 /* AffirmationsTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsTableViewManager.swift; sourceTree = "<group>"; };
+		8398683D2A44E6AD004A5C40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8398683F2A4523B1004A5C40 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		839868412A4524A4004A5C40 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		839868452A4524DD004A5C40 /* JournalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JournalTableViewCell.swift; path = "Clarity/View Profile Page/Views/JournalTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		839868472A4524FC004A5C40 /* JournalTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JournalTableViewManager.swift; path = "Clarity/Journal Page/JournalTableViewManager.swift"; sourceTree = SOURCE_ROOT; };
+		839868492A458B5E004A5C40 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,17 +110,21 @@
 		839867E62A3D0BCE004A5C40 /* Clarity */ = {
 			isa = PBXGroup;
 			children = (
+				8398682D2A4283CA004A5C40 /* Configs.swift */,
+				839868362A4390E3004A5C40 /* Data Models */,
 				8398680B2A3FFC1D004A5C40 /* Landing Page */,
 				839868162A3FFCA1004A5C40 /* Register Page */,
 				839868112A3FFC64004A5C40 /* Login Page */,
 				839868212A4103F9004A5C40 /* Home Page */,
+				8398682B2A411CE2004A5C40 /* View Profile Page */,
+				839868432A4524A8004A5C40 /* Journal Page */,
 				839867E72A3D0BCE004A5C40 /* AppDelegate.swift */,
 				839867E92A3D0BCE004A5C40 /* SceneDelegate.swift */,
 				839867ED2A3D0BCE004A5C40 /* Main.storyboard */,
 				839867F02A3D0BCF004A5C40 /* Assets.xcassets */,
 				839867F22A3D0BCF004A5C40 /* LaunchScreen.storyboard */,
 				839867F52A3D0BCF004A5C40 /* Info.plist */,
-				839868252A410BE4004A5C40 /* GoogleService-Info.plist */,
+				8398683D2A44E6AD004A5C40 /* GoogleService-Info.plist */,
 			);
 			path = Clarity;
 			sourceTree = "<group>";
@@ -172,6 +200,54 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8398682B2A411CE2004A5C40 /* View Profile Page */ = {
+			isa = PBXGroup;
+			children = (
+				8398682C2A411CF1004A5C40 /* Views */,
+				839868292A411CDF004A5C40 /* ProfileViewController.swift */,
+				839868372A43993F004A5C40 /* AffirmationsTableViewManager.swift */,
+			);
+			path = "View Profile Page";
+			sourceTree = "<group>";
+		};
+		8398682C2A411CF1004A5C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				839868272A411CD2004A5C40 /* ProfileView.swift */,
+				8398682F2A428683004A5C40 /* CollageTableViewCell.swift */,
+				839868312A4286AD004A5C40 /* AffirmationsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		839868362A4390E3004A5C40 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				839868332A4390D8004A5C40 /* Affirmation.swift */,
+				839868492A458B5E004A5C40 /* Journal.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		839868432A4524A8004A5C40 /* Journal Page */ = {
+			isa = PBXGroup;
+			children = (
+				839868442A4524AF004A5C40 /* Views */,
+				839868412A4524A4004A5C40 /* JournalViewController.swift */,
+				839868472A4524FC004A5C40 /* JournalTableViewManager.swift */,
+			);
+			path = "Journal Page";
+			sourceTree = "<group>";
+		};
+		839868442A4524AF004A5C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				839868452A4524DD004A5C40 /* JournalTableViewCell.swift */,
+				8398683F2A4523B1004A5C40 /* JournalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,7 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				839867F42A3D0BCF004A5C40 /* LaunchScreen.storyboard in Resources */,
-				839868262A410BE4004A5C40 /* GoogleService-Info.plist in Resources */,
+				8398683E2A44E6AD004A5C40 /* GoogleService-Info.plist in Resources */,
 				839867F12A3D0BCF004A5C40 /* Assets.xcassets in Resources */,
 				839867EF2A3D0BCE004A5C40 /* Main.storyboard in Resources */,
 			);
@@ -254,17 +330,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				839868102A3FFC61004A5C40 /* LoginViewController.swift in Sources */,
+				8398684A2A458B5E004A5C40 /* Journal.swift in Sources */,
+				8398682E2A4283CA004A5C40 /* Configs.swift in Sources */,
+				839868382A43993F004A5C40 /* AffirmationsTableViewManager.swift in Sources */,
 				839868242A41083A004A5C40 /* LoginFirebaseManager.swift in Sources */,
 				8398681A2A40FF2C004A5C40 /* RegisterFirebaseManager.swift in Sources */,
+				839868322A4286AD004A5C40 /* AffirmationsTableViewCell.swift in Sources */,
 				8398681C2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift in Sources */,
+				839868342A4390D8004A5C40 /* Affirmation.swift in Sources */,
+				839868302A428683004A5C40 /* CollageTableViewCell.swift in Sources */,
+				839868482A4524FC004A5C40 /* JournalTableViewManager.swift in Sources */,
+				839868462A4524DD004A5C40 /* JournalTableViewCell.swift in Sources */,
 				839867FC2A3D0C4A004A5C40 /* LandingPageView.swift in Sources */,
 				839868132A3FFC8E004A5C40 /* RegisterViewController.swift in Sources */,
 				839867EC2A3D0BCE004A5C40 /* ViewController.swift in Sources */,
+				839868422A4524A4004A5C40 /* JournalViewController.swift in Sources */,
 				839867E82A3D0BCE004A5C40 /* AppDelegate.swift in Sources */,
 				839868152A3FFC9E004A5C40 /* RegisterView.swift in Sources */,
 				839868202A4103F6004A5C40 /* HomePageViewController.swift in Sources */,
 				8398680E2A3FFC4D004A5C40 /* LoginView.swift in Sources */,
 				8398681E2A4103E8004A5C40 /* HomePageView.swift in Sources */,
+				8398682A2A411CDF004A5C40 /* ProfileViewController.swift in Sources */,
+				839868402A4523B1004A5C40 /* JournalView.swift in Sources */,
+				839868282A411CD2004A5C40 /* ProfileView.swift in Sources */,
 				839867EA2A3D0BCE004A5C40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

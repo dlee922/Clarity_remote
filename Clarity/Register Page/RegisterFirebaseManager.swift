@@ -32,6 +32,20 @@ extension RegisterViewController {
         changeRequest?.commitChanges(completion: {(error) in
             if error == nil {
                 //MARK: Push the home page here
+                
+                if let userEmail = Auth.auth().currentUser?.email {
+                    let userName = Auth.auth().currentUser?.displayName
+                    self.database.collection("users")
+                        .addDocument(data: ["name": userName!, "email": userEmail]) {
+                            (err) in
+                            if let err = err {
+                                print("Error adding user to database")
+                            }
+                            else {
+                                print("Successfully added user")
+                            }
+                        }
+                }
                 let homePageController = HomePageViewController()
                 self.navigationController?.pushViewController(homePageController, animated: true)
             }
