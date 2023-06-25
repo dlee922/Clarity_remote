@@ -89,7 +89,7 @@ class HomePageViewController: UIViewController {
                 }
                 //MARK: Display one of the strings inside of the affirmations array as the text for the label
                 if let receivedAffirmation = self.affirmations.randomElement() {
-                    self.homeScreen.labelAffirmation.text = self.homeScreen.tfAffirmation.text
+                    self.homeScreen.labelAffirmation.text = receivedAffirmation.text
                     self.saveReceivedAffirmationToUser(affirmation: receivedAffirmation)
                 }
             }
