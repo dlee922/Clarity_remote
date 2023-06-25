@@ -20,6 +20,8 @@ class RegisterViewController: UIViewController {
     
     let database = Firestore.firestore()
     
+    let childProgressView = ProgressSpinnerViewController()
+    
     override func loadView() {
         view = registerScreen
     }
@@ -35,7 +37,12 @@ class RegisterViewController: UIViewController {
     }
     
     @objc func onButtonRegisterTapped() {
-        registerNewAccount()
+//        showActivityIndicator()
+        uploadProfilePhotoToStorage()
+//        registerScreen.tfEmail.text = ""
+//        registerScreen.tfName.text = ""
+//        registerScreen.tfPassword.text = ""
+//        registerScreen.tfReEnterPassword.text = ""
     }
     
     

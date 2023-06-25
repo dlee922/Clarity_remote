@@ -15,7 +15,7 @@ class ProfileViewController: UIViewController {
     
     var currentUser:FirebaseAuth.User?
     
-    var journalingCount:Int? = 0
+    var journalEntries = [Journal]()
     
     var receivedAffirmations = [Affirmation]()
     
@@ -36,10 +36,6 @@ class ProfileViewController: UIViewController {
             profileScreen.labelEmail.text = "Email: \(email)"
         }
         
-        if let count = journalingCount {
-            profileScreen.labelJournalingTracker.text = "Journaling Streak: \(count)"
-        }
-        
         profileScreen.tableViewAffirmations.dataSource = self
         profileScreen.tableViewAffirmations.delegate = self
         profileScreen.tableViewAffirmations.separatorStyle = .none
@@ -50,7 +46,36 @@ class ProfileViewController: UIViewController {
         profileScreen.tableViewCollage.delegate = self
         profileScreen.tableViewCollage.separatorStyle = .none
         
+        if let url = self.currentUser?.photoURL {
+            self.profileScreen.imageProfilePhoto.loadRemoteImage(from: url)
+        }
         
+        setJournalingCount()
+    }
+    
+    func setJournalingCount() {
+        if let userEmail = currentUser?.email {
+            database.collection("users")
+                .document(userEmail)
+                .collection("journals").addSnapshotListener(includeMetadataChanges: false, listener: {querySnapshot, error in
+                if let documents = querySnapshot?.documents {
+                    self.journalEntries.removeAll()
+                    for document in documents {
+                        do {
+                            let journal = try document.data(as: Journal.self)
+                            self.journalEntries.append(journal)
+                            
+                        }
+                        catch {
+                            print(error)
+                        }
+                    }
+                    self.profileScreen.labelJournalingTracker.text = "Total Journal Entries: \(self.journalEntries.count)"
+                    
+                    
+                }
+            })
+        }
     }
 
     func observeReceivedAffirmations() {
@@ -75,10 +100,4 @@ class ProfileViewController: UIViewController {
                 })
         }
     }
-    
-    func incrementJournalingCount() {
-        
-    }
-    
-    
 }

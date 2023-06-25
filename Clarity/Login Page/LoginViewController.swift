@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
     
     @objc func onButtonLoginTapped() {
         signInToFirebase()
+        loginScreen.tfEmail.text = ""
+        loginScreen.tfPassword.text = ""
     }
     
     

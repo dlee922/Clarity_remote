@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class ViewController: UIViewController {
 
     let landingPageScreen = LandingPageView()
+    
+    let storage = Storage.storage()
+    
     
     override func loadView() {
         view = landingPageScreen
@@ -21,6 +25,7 @@ class ViewController: UIViewController {
         
         landingPageScreen.buttonLogin.addTarget(self, action: #selector(onButtonLoginTapped), for: .touchUpInside)
         landingPageScreen.buttonSignUp.addTarget(self, action: #selector(onButtonSignUpTapped), for: .touchUpInside)
+        
     }
     
     @objc func onButtonLoginTapped() {

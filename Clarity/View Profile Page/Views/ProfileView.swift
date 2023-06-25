@@ -93,6 +93,8 @@ class ProfileView: UIView {
         NSLayoutConstraint.activate([
             imageProfilePhoto.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 16),
             imageProfilePhoto.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            imageProfilePhoto.heightAnchor.constraint(equalToConstant: 100),
+            imageProfilePhoto.widthAnchor.constraint(equalToConstant: 100),
             
             labelName.topAnchor.constraint(equalTo: imageProfilePhoto.bottomAnchor, constant: 16),
             labelName.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 8),

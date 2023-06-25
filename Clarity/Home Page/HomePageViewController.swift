@@ -32,6 +32,8 @@ class HomePageViewController: UIViewController {
         homeScreen.buttonLocations.addTarget(self, action: #selector(onButtonLocationsTapped), for: .touchUpInside)
         homeScreen.buttonViewProfile.addTarget(self, action: #selector(onButtonViewProfileTapped), for: .touchUpInside)
         homeScreen.buttonViewInfo.addTarget(self, action: #selector(onButtonViewInfoTapped), for: .touchUpInside)
+        
+        setupRightBarButton()
     }
     
     @objc func onButtonJournalingTapped() {
@@ -119,7 +121,6 @@ class HomePageViewController: UIViewController {
     @objc func onButtonViewProfileTapped() {
         let viewProfileScreen = ProfileViewController()
         viewProfileScreen.currentUser = currentUser
-        print(currentUser!)
         navigationController?.pushViewController(viewProfileScreen, animated: true)
     }
     

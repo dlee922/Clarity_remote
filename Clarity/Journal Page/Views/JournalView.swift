@@ -45,6 +45,10 @@ class JournalView: UIView {
     func setupButtonSubmit() {
         buttonSubmit = UIButton(type: .system)
         buttonSubmit.setTitle("Submit Journal Entry", for: .normal)
+        buttonSubmit.tintColor = .white
+        buttonSubmit.setBackgroundImage(.pixel(ofColor: .systemMint), for: .normal)
+        buttonSubmit.layer.cornerRadius = 20
+        buttonSubmit.layer.masksToBounds = true
         buttonSubmit.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(buttonSubmit)
     }
@@ -63,9 +67,14 @@ class JournalView: UIView {
             
             tfEntry.topAnchor.constraint(equalTo: labelQuestion.bottomAnchor, constant: 16),
             tfEntry.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            tfEntry.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            tfEntry.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -50),
             
             buttonSubmit.topAnchor.constraint(equalTo: tfEntry.bottomAnchor, constant: 16),
             buttonSubmit.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            buttonSubmit.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            buttonSubmit.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            buttonSubmit.heightAnchor.constraint(equalToConstant: 40),
             
             tableViewJournal.topAnchor.constraint(equalTo: buttonSubmit.bottomAnchor, constant: 16),
             tableViewJournal.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: 16),

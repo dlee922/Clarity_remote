@@ -29,7 +29,7 @@ class LandingPageView: UIView {
     
     func setupImageLogo() {
         imageLogo = UIImageView()
-        imageLogo.image = UIImage(systemName: "photo")
+        imageLogo.image = UIImage(systemName: "apple.logo")
         imageLogo.contentMode = .scaleToFill
         imageLogo.clipsToBounds = true
         imageLogo.layer.cornerRadius = 10
@@ -49,6 +49,10 @@ class LandingPageView: UIView {
     func setupButtonLogin() {
         buttonLogin = UIButton(type: .system)
         buttonLogin.setTitle("Login", for: .normal)
+        buttonLogin.tintColor = .white
+        buttonLogin.setBackgroundImage(.pixel(ofColor: .systemMint), for: .normal)
+        buttonLogin.layer.cornerRadius = 20
+        buttonLogin.layer.masksToBounds = true
         buttonLogin.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(buttonLogin)
     }
@@ -56,6 +60,10 @@ class LandingPageView: UIView {
     func setupButtonSignUp() {
         buttonSignUp = UIButton(type: .system)
         buttonSignUp.setTitle("Sign Up", for: .normal)
+        buttonSignUp.tintColor = .white
+        buttonSignUp.setBackgroundImage(.pixel(ofColor: .systemMint), for: .normal)
+        buttonSignUp.layer.cornerRadius = 20
+        buttonSignUp.layer.masksToBounds = true
         buttonSignUp.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(buttonSignUp)
     }
@@ -64,7 +72,7 @@ class LandingPageView: UIView {
         NSLayoutConstraint.activate([
             imageLogo.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 100),
             imageLogo.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            imageLogo.heightAnchor.constraint(equalToConstant: 50),
+            imageLogo.heightAnchor.constraint(equalToConstant: 65),
             imageLogo.widthAnchor.constraint(equalToConstant: 50),
             
             labelName.topAnchor.constraint(equalTo: imageLogo.bottomAnchor, constant: 16),
@@ -72,9 +80,15 @@ class LandingPageView: UIView {
             
             buttonLogin.topAnchor.constraint(equalTo: labelName.bottomAnchor, constant: 50),
             buttonLogin.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            
+            buttonLogin.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            buttonLogin.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            buttonLogin.heightAnchor.constraint(equalToConstant: 40),
+
             buttonSignUp.topAnchor.constraint(equalTo: buttonLogin.bottomAnchor, constant: 16),
-            buttonSignUp.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor)
+            buttonSignUp.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            buttonSignUp.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            buttonSignUp.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            buttonSignUp.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     

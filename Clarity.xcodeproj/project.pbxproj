@@ -40,6 +40,12 @@
 		839868462A4524DD004A5C40 /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868452A4524DD004A5C40 /* JournalTableViewCell.swift */; };
 		839868482A4524FC004A5C40 /* JournalTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868472A4524FC004A5C40 /* JournalTableViewManager.swift */; };
 		8398684A2A458B5E004A5C40 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868492A458B5E004A5C40 /* Journal.swift */; };
+		8398684C2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398684B2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift */; };
+		8398684E2A464D9B004A5C40 /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398684D2A464D9B004A5C40 /* ProgressSpinnerViewController.swift */; };
+		839868502A464DB1004A5C40 /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398684F2A464DB1004A5C40 /* ProgressSpinnerDelegate.swift */; };
+		839868572A46D765004A5C40 /* ImageViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868562A46D765004A5C40 /* ImageViewUtils.swift */; };
+		839868592A47CA77004A5C40 /* RightBarButtonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868582A47CA76004A5C40 /* RightBarButtonManager.swift */; };
+		8398685B2A47D968004A5C40 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398685A2A47D968004A5C40 /* ImageUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,12 @@
 		839868452A4524DD004A5C40 /* JournalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JournalTableViewCell.swift; path = "Clarity/View Profile Page/Views/JournalTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		839868472A4524FC004A5C40 /* JournalTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JournalTableViewManager.swift; path = "Clarity/Journal Page/JournalTableViewManager.swift"; sourceTree = SOURCE_ROOT; };
 		839868492A458B5E004A5C40 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		8398684B2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProgressIndicatorManager.swift; sourceTree = "<group>"; };
+		8398684D2A464D9B004A5C40 /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
+		8398684F2A464DB1004A5C40 /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
+		839868562A46D765004A5C40 /* ImageViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageViewUtils.swift; path = "Home Page/Views/ImageViewUtils.swift"; sourceTree = "<group>"; };
+		839868582A47CA76004A5C40 /* RightBarButtonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarButtonManager.swift; sourceTree = "<group>"; };
+		8398685A2A47D968004A5C40 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +122,11 @@
 		839867E62A3D0BCE004A5C40 /* Clarity */ = {
 			isa = PBXGroup;
 			children = (
+				839868562A46D765004A5C40 /* ImageViewUtils.swift */,
+				8398685A2A47D968004A5C40 /* ImageUtils.swift */,
 				8398682D2A4283CA004A5C40 /* Configs.swift */,
 				839868362A4390E3004A5C40 /* Data Models */,
+				839868512A464DB4004A5C40 /* Progress Indicator */,
 				8398680B2A3FFC1D004A5C40 /* Landing Page */,
 				839868162A3FFCA1004A5C40 /* Register Page */,
 				839868112A3FFC64004A5C40 /* Login Page */,
@@ -162,6 +177,7 @@
 				839868172A3FFCB4004A5C40 /* Views */,
 				839868122A3FFC8E004A5C40 /* RegisterViewController.swift */,
 				8398681B2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift */,
+				8398684B2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift */,
 				839868192A40FF2C004A5C40 /* RegisterFirebaseManager.swift */,
 			);
 			path = "Register Page";
@@ -188,6 +204,7 @@
 			children = (
 				839868222A410408004A5C40 /* Views */,
 				8398681F2A4103F6004A5C40 /* HomePageViewController.swift */,
+				839868582A47CA76004A5C40 /* RightBarButtonManager.swift */,
 			);
 			path = "Home Page";
 			sourceTree = "<group>";
@@ -246,6 +263,15 @@
 				8398683F2A4523B1004A5C40 /* JournalView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		839868512A464DB4004A5C40 /* Progress Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				8398684D2A464D9B004A5C40 /* ProgressSpinnerViewController.swift */,
+				8398684F2A464DB1004A5C40 /* ProgressSpinnerDelegate.swift */,
+			);
+			path = "Progress Indicator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,13 +358,17 @@
 				839868102A3FFC61004A5C40 /* LoginViewController.swift in Sources */,
 				8398684A2A458B5E004A5C40 /* Journal.swift in Sources */,
 				8398682E2A4283CA004A5C40 /* Configs.swift in Sources */,
+				8398684C2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift in Sources */,
 				839868382A43993F004A5C40 /* AffirmationsTableViewManager.swift in Sources */,
 				839868242A41083A004A5C40 /* LoginFirebaseManager.swift in Sources */,
+				839868592A47CA77004A5C40 /* RightBarButtonManager.swift in Sources */,
 				8398681A2A40FF2C004A5C40 /* RegisterFirebaseManager.swift in Sources */,
 				839868322A4286AD004A5C40 /* AffirmationsTableViewCell.swift in Sources */,
 				8398681C2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift in Sources */,
 				839868342A4390D8004A5C40 /* Affirmation.swift in Sources */,
+				8398685B2A47D968004A5C40 /* ImageUtils.swift in Sources */,
 				839868302A428683004A5C40 /* CollageTableViewCell.swift in Sources */,
+				8398684E2A464D9B004A5C40 /* ProgressSpinnerViewController.swift in Sources */,
 				839868482A4524FC004A5C40 /* JournalTableViewManager.swift in Sources */,
 				839868462A4524DD004A5C40 /* JournalTableViewCell.swift in Sources */,
 				839867FC2A3D0C4A004A5C40 /* LandingPageView.swift in Sources */,
@@ -354,6 +384,8 @@
 				839868402A4523B1004A5C40 /* JournalView.swift in Sources */,
 				839868282A411CD2004A5C40 /* ProfileView.swift in Sources */,
 				839867EA2A3D0BCE004A5C40 /* SceneDelegate.swift in Sources */,
+				839868502A464DB1004A5C40 /* ProgressSpinnerDelegate.swift in Sources */,
+				839868572A46D765004A5C40 /* ImageViewUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

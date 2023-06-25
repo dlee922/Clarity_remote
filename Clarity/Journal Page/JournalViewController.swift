@@ -91,7 +91,7 @@ class JournalViewController: UIViewController {
                             print(error)
                         }
                     }
-                    self.journalEntries.sort(by: { $0.dateTime < $1.dateTime })
+                    self.journalEntries.sort(by: { $0.dateTime > $1.dateTime })
                     self.journalScreen.tableViewJournal.reloadData()
                 }
             })
