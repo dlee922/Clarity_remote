@@ -46,6 +46,10 @@
 		839868572A46D765004A5C40 /* ImageViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868562A46D765004A5C40 /* ImageViewUtils.swift */; };
 		839868592A47CA77004A5C40 /* RightBarButtonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868582A47CA76004A5C40 /* RightBarButtonManager.swift */; };
 		8398685B2A47D968004A5C40 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398685A2A47D968004A5C40 /* ImageUtils.swift */; };
+		8D5E650C2A47F4DE001F059E /* CollageImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E650B2A47F4DE001F059E /* CollageImage.swift */; };
+		8D5E650E2A47F4E3001F059E /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E650D2A47F4E3001F059E /* InfoPage.swift */; };
+		8D5E65102A47F4E9001F059E /* InfoPage in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E650F2A47F4E9001F059E /* InfoPage */; };
+		8D5E65122A47F502001F059E /* Collage in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E65112A47F502001F059E /* Collage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		839868562A46D765004A5C40 /* ImageViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageViewUtils.swift; path = "Home Page/Views/ImageViewUtils.swift"; sourceTree = "<group>"; };
 		839868582A47CA76004A5C40 /* RightBarButtonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarButtonManager.swift; sourceTree = "<group>"; };
 		8398685A2A47D968004A5C40 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		8D5E650B2A47F4DE001F059E /* CollageImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageImage.swift; sourceTree = "<group>"; };
+		8D5E650D2A47F4E3001F059E /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		8D5E650F2A47F4E9001F059E /* InfoPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = InfoPage; sourceTree = "<group>"; };
+		8D5E65112A47F502001F059E /* Collage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Collage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,8 @@
 		839867E62A3D0BCE004A5C40 /* Clarity */ = {
 			isa = PBXGroup;
 			children = (
+				8D5E65112A47F502001F059E /* Collage */,
+				8D5E650F2A47F4E9001F059E /* InfoPage */,
 				839868562A46D765004A5C40 /* ImageViewUtils.swift */,
 				8398685A2A47D968004A5C40 /* ImageUtils.swift */,
 				8398682D2A4283CA004A5C40 /* Configs.swift */,
@@ -240,6 +250,8 @@
 		839868362A4390E3004A5C40 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				8D5E650D2A47F4E3001F059E /* InfoPage.swift */,
+				8D5E650B2A47F4DE001F059E /* CollageImage.swift */,
 				839868332A4390D8004A5C40 /* Affirmation.swift */,
 				839868492A458B5E004A5C40 /* Journal.swift */,
 			);
@@ -341,10 +353,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5E65122A47F502001F059E /* Collage in Resources */,
 				839867F42A3D0BCF004A5C40 /* LaunchScreen.storyboard in Resources */,
 				8398683E2A44E6AD004A5C40 /* GoogleService-Info.plist in Resources */,
 				839867F12A3D0BCF004A5C40 /* Assets.xcassets in Resources */,
 				839867EF2A3D0BCE004A5C40 /* Main.storyboard in Resources */,
+				8D5E65102A47F4E9001F059E /* InfoPage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +376,8 @@
 				839868382A43993F004A5C40 /* AffirmationsTableViewManager.swift in Sources */,
 				839868242A41083A004A5C40 /* LoginFirebaseManager.swift in Sources */,
 				839868592A47CA77004A5C40 /* RightBarButtonManager.swift in Sources */,
+				8D5E650C2A47F4DE001F059E /* CollageImage.swift in Sources */,
+				8D5E650E2A47F4E3001F059E /* InfoPage.swift in Sources */,
 				8398681A2A40FF2C004A5C40 /* RegisterFirebaseManager.swift in Sources */,
 				839868322A4286AD004A5C40 /* AffirmationsTableViewCell.swift in Sources */,
 				8398681C2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift in Sources */,
