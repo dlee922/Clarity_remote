@@ -125,7 +125,16 @@ class HomePageViewController: UIViewController {
     }
     
     @objc func onButtonViewInfoTapped() {
-        
+        let infoScreen = InfoPageViewController()
+        navigationController?.pushViewController(infoScreen, animated: true)
+   
+    }
+    
+    @objc func onButtonCollageTapped() {
+        let collageScreen = CollageViewController()
+        collageScreen.databaseDelegate = self
+        navigationController?.pushViewController(infoScreen, animated: true)
+   
     }
     
     //MARK: alert for an empty text field
