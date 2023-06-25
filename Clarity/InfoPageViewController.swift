@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class InfoPageViewController: UIViewController {
 
@@ -13,6 +14,8 @@ class InfoPageViewController: UIViewController {
     let infoScreen = InfoPageView()
     
     var infoPages = [InfoPage]()
+    
+    var currentUser:FirebaseAuth.User?
     
     var infoDirectory = [JournalingPageViewController(), MeditationViewController(), WordsOfAffirmationViewController()]
     
@@ -45,6 +48,10 @@ class InfoPageViewController: UIViewController {
        
         
         // Do any additional setup after loading the view.
+    }
+    
+    func popController() {
+        navigationController?.popViewController(animated: false)
     }
     
 

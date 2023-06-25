@@ -47,7 +47,7 @@ class ProfileViewController: UIViewController {
         profileScreen.tableViewCollage.separatorStyle = .none
         
         if let url = self.currentUser?.photoURL {
-            self.profileScreen.imageProfilePhoto.loadRemoteImage(from: url)
+//            self.profileScreen.imageProfilePhoto.loadRemoteImage(from: url)
         }
         
         setJournalingCount()

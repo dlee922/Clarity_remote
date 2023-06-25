@@ -34,7 +34,6 @@
 		839868322A4286AD004A5C40 /* AffirmationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868312A4286AD004A5C40 /* AffirmationsTableViewCell.swift */; };
 		839868342A4390D8004A5C40 /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868332A4390D8004A5C40 /* Affirmation.swift */; };
 		839868382A43993F004A5C40 /* AffirmationsTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868372A43993F004A5C40 /* AffirmationsTableViewManager.swift */; };
-		8398683E2A44E6AD004A5C40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8398683D2A44E6AD004A5C40 /* GoogleService-Info.plist */; };
 		839868402A4523B1004A5C40 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398683F2A4523B1004A5C40 /* JournalView.swift */; };
 		839868422A4524A4004A5C40 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868412A4524A4004A5C40 /* JournalViewController.swift */; };
 		839868462A4524DD004A5C40 /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868452A4524DD004A5C40 /* JournalTableViewCell.swift */; };
@@ -43,13 +42,27 @@
 		8398684C2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398684B2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift */; };
 		8398684E2A464D9B004A5C40 /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398684D2A464D9B004A5C40 /* ProgressSpinnerViewController.swift */; };
 		839868502A464DB1004A5C40 /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398684F2A464DB1004A5C40 /* ProgressSpinnerDelegate.swift */; };
-		839868572A46D765004A5C40 /* ImageViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868562A46D765004A5C40 /* ImageViewUtils.swift */; };
 		839868592A47CA77004A5C40 /* RightBarButtonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839868582A47CA76004A5C40 /* RightBarButtonManager.swift */; };
 		8398685B2A47D968004A5C40 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398685A2A47D968004A5C40 /* ImageUtils.swift */; };
 		8D5E650C2A47F4DE001F059E /* CollageImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E650B2A47F4DE001F059E /* CollageImage.swift */; };
 		8D5E650E2A47F4E3001F059E /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E650D2A47F4E3001F059E /* InfoPage.swift */; };
-		8D5E65102A47F4E9001F059E /* InfoPage in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E650F2A47F4E9001F059E /* InfoPage */; };
-		8D5E65122A47F502001F059E /* Collage in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E65112A47F502001F059E /* Collage */; };
+		8D5E65382A47FAFE001F059E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E65372A47FAFE001F059E /* GoogleService-Info.plist */; };
+		8D7B6EF72A4808BD00B2BDB2 /* CollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B6EF42A4808BC00B2BDB2 /* CollageView.swift */; };
+		8D7B6EF82A4808BD00B2BDB2 /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B6EF52A4808BD00B2BDB2 /* CollageViewController.swift */; };
+		8D7B6EFC2A4808C400B2BDB2 /* AddCollageImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B6EFA2A4808C400B2BDB2 /* AddCollageImageViewController.swift */; };
+		8D7B6EFD2A4808C400B2BDB2 /* AddCollageImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B6EFB2A4808C400B2BDB2 /* AddCollageImageView.swift */; };
+		8D7B6F002A4808D000B2BDB2 /* DisplayCollageImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B6EFE2A4808CF00B2BDB2 /* DisplayCollageImageViewController.swift */; };
+		8D7B6F012A4808D000B2BDB2 /* DisplayCollageImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B6EFF2A4808D000B2BDB2 /* DisplayCollageImageView.swift */; };
+		8D7B6F032A4808F100B2BDB2 /* CollageImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B6F022A4808F100B2BDB2 /* CollageImageTableViewCell.swift */; };
+		8DB7C06F2A47FF6400B8014C /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C06E2A47FF6400B8014C /* InfoPageViewController.swift */; };
+		8DB7C0702A47FF6400B8014C /* InfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C06D2A47FF6400B8014C /* InfoPageView.swift */; };
+		8DB7C0712A47FF6400B8014C /* InfoPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C06C2A47FF6400B8014C /* InfoPageTableViewCell.swift */; };
+		8DB7C0742A47FF7100B8014C /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C0732A47FF7100B8014C /* MeditationView.swift */; };
+		8DB7C0752A47FF7100B8014C /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C0722A47FF7100B8014C /* MeditationViewController.swift */; };
+		8DB7C0782A47FF7500B8014C /* JournalingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C0762A47FF7500B8014C /* JournalingPageViewController.swift */; };
+		8DB7C0792A47FF7500B8014C /* JournalingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C0772A47FF7500B8014C /* JournalingPageView.swift */; };
+		8DB7C07C2A47FF7900B8014C /* WordsOfAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C07A2A47FF7900B8014C /* WordsOfAffirmationView.swift */; };
+		8DB7C07D2A47FF7900B8014C /* WordsOfAffirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C07B2A47FF7900B8014C /* WordsOfAffirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +91,6 @@
 		839868312A4286AD004A5C40 /* AffirmationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsTableViewCell.swift; sourceTree = "<group>"; };
 		839868332A4390D8004A5C40 /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
 		839868372A43993F004A5C40 /* AffirmationsTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsTableViewManager.swift; sourceTree = "<group>"; };
-		8398683D2A44E6AD004A5C40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8398683F2A4523B1004A5C40 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		839868412A4524A4004A5C40 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		839868452A4524DD004A5C40 /* JournalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JournalTableViewCell.swift; path = "Clarity/View Profile Page/Views/JournalTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
@@ -87,13 +99,27 @@
 		8398684B2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProgressIndicatorManager.swift; sourceTree = "<group>"; };
 		8398684D2A464D9B004A5C40 /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
 		8398684F2A464DB1004A5C40 /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
-		839868562A46D765004A5C40 /* ImageViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageViewUtils.swift; path = "Home Page/Views/ImageViewUtils.swift"; sourceTree = "<group>"; };
 		839868582A47CA76004A5C40 /* RightBarButtonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarButtonManager.swift; sourceTree = "<group>"; };
 		8398685A2A47D968004A5C40 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		8D5E650B2A47F4DE001F059E /* CollageImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageImage.swift; sourceTree = "<group>"; };
 		8D5E650D2A47F4E3001F059E /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
-		8D5E650F2A47F4E9001F059E /* InfoPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = InfoPage; sourceTree = "<group>"; };
-		8D5E65112A47F502001F059E /* Collage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Collage; sourceTree = "<group>"; };
+		8D5E65372A47FAFE001F059E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/App12/App12/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D7B6EF42A4808BC00B2BDB2 /* CollageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageView.swift; sourceTree = "<group>"; };
+		8D7B6EF52A4808BD00B2BDB2 /* CollageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
+		8D7B6EFA2A4808C400B2BDB2 /* AddCollageImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCollageImageViewController.swift; sourceTree = "<group>"; };
+		8D7B6EFB2A4808C400B2BDB2 /* AddCollageImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCollageImageView.swift; sourceTree = "<group>"; };
+		8D7B6EFE2A4808CF00B2BDB2 /* DisplayCollageImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCollageImageViewController.swift; sourceTree = "<group>"; };
+		8D7B6EFF2A4808D000B2BDB2 /* DisplayCollageImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCollageImageView.swift; sourceTree = "<group>"; };
+		8D7B6F022A4808F100B2BDB2 /* CollageImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageImageTableViewCell.swift; sourceTree = "<group>"; };
+		8DB7C06C2A47FF6400B8014C /* InfoPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageTableViewCell.swift; sourceTree = "<group>"; };
+		8DB7C06D2A47FF6400B8014C /* InfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageView.swift; sourceTree = "<group>"; };
+		8DB7C06E2A47FF6400B8014C /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
+		8DB7C0722A47FF7100B8014C /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		8DB7C0732A47FF7100B8014C /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		8DB7C0762A47FF7500B8014C /* JournalingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingPageViewController.swift; sourceTree = "<group>"; };
+		8DB7C0772A47FF7500B8014C /* JournalingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingPageView.swift; sourceTree = "<group>"; };
+		8DB7C07A2A47FF7900B8014C /* WordsOfAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsOfAffirmationView.swift; sourceTree = "<group>"; };
+		8DB7C07B2A47FF7900B8014C /* WordsOfAffirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsOfAffirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +156,22 @@
 		839867E62A3D0BCE004A5C40 /* Clarity */ = {
 			isa = PBXGroup;
 			children = (
-				8D5E65112A47F502001F059E /* Collage */,
-				8D5E650F2A47F4E9001F059E /* InfoPage */,
-				839868562A46D765004A5C40 /* ImageViewUtils.swift */,
+				8D7B6F022A4808F100B2BDB2 /* CollageImageTableViewCell.swift */,
+				8DB7C06C2A47FF6400B8014C /* InfoPageTableViewCell.swift */,
+				8DB7C06D2A47FF6400B8014C /* InfoPageView.swift */,
+				8DB7C06E2A47FF6400B8014C /* InfoPageViewController.swift */,
+				8DB7C0732A47FF7100B8014C /* MeditationView.swift */,
+				8DB7C0722A47FF7100B8014C /* MeditationViewController.swift */,
+				8DB7C0772A47FF7500B8014C /* JournalingPageView.swift */,
+				8DB7C0762A47FF7500B8014C /* JournalingPageViewController.swift */,
+				8D7B6EFB2A4808C400B2BDB2 /* AddCollageImageView.swift */,
+				8D7B6EFA2A4808C400B2BDB2 /* AddCollageImageViewController.swift */,
+				8D7B6EF42A4808BC00B2BDB2 /* CollageView.swift */,
+				8D7B6EF52A4808BD00B2BDB2 /* CollageViewController.swift */,
+				8DB7C07A2A47FF7900B8014C /* WordsOfAffirmationView.swift */,
+				8D7B6EFF2A4808D000B2BDB2 /* DisplayCollageImageView.swift */,
+				8D7B6EFE2A4808CF00B2BDB2 /* DisplayCollageImageViewController.swift */,
+				8DB7C07B2A47FF7900B8014C /* WordsOfAffirmationViewController.swift */,
 				8398685A2A47D968004A5C40 /* ImageUtils.swift */,
 				8398682D2A4283CA004A5C40 /* Configs.swift */,
 				839868362A4390E3004A5C40 /* Data Models */,
@@ -149,7 +188,7 @@
 				839867F02A3D0BCF004A5C40 /* Assets.xcassets */,
 				839867F22A3D0BCF004A5C40 /* LaunchScreen.storyboard */,
 				839867F52A3D0BCF004A5C40 /* Info.plist */,
-				8398683D2A44E6AD004A5C40 /* GoogleService-Info.plist */,
+				8D5E65372A47FAFE001F059E /* GoogleService-Info.plist */,
 			);
 			path = Clarity;
 			sourceTree = "<group>";
@@ -353,12 +392,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5E65122A47F502001F059E /* Collage in Resources */,
 				839867F42A3D0BCF004A5C40 /* LaunchScreen.storyboard in Resources */,
-				8398683E2A44E6AD004A5C40 /* GoogleService-Info.plist in Resources */,
 				839867F12A3D0BCF004A5C40 /* Assets.xcassets in Resources */,
 				839867EF2A3D0BCE004A5C40 /* Main.storyboard in Resources */,
-				8D5E65102A47F4E9001F059E /* InfoPage in Resources */,
+				8D5E65382A47FAFE001F059E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,28 +406,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB7C0712A47FF6400B8014C /* InfoPageTableViewCell.swift in Sources */,
 				839868102A3FFC61004A5C40 /* LoginViewController.swift in Sources */,
 				8398684A2A458B5E004A5C40 /* Journal.swift in Sources */,
 				8398682E2A4283CA004A5C40 /* Configs.swift in Sources */,
 				8398684C2A464CCD004A5C40 /* RegisterProgressIndicatorManager.swift in Sources */,
 				839868382A43993F004A5C40 /* AffirmationsTableViewManager.swift in Sources */,
+				8D7B6F032A4808F100B2BDB2 /* CollageImageTableViewCell.swift in Sources */,
+				8DB7C0702A47FF6400B8014C /* InfoPageView.swift in Sources */,
+				8DB7C07D2A47FF7900B8014C /* WordsOfAffirmationViewController.swift in Sources */,
 				839868242A41083A004A5C40 /* LoginFirebaseManager.swift in Sources */,
 				839868592A47CA77004A5C40 /* RightBarButtonManager.swift in Sources */,
 				8D5E650C2A47F4DE001F059E /* CollageImage.swift in Sources */,
 				8D5E650E2A47F4E3001F059E /* InfoPage.swift in Sources */,
+				8D7B6F002A4808D000B2BDB2 /* DisplayCollageImageViewController.swift in Sources */,
 				8398681A2A40FF2C004A5C40 /* RegisterFirebaseManager.swift in Sources */,
 				839868322A4286AD004A5C40 /* AffirmationsTableViewCell.swift in Sources */,
 				8398681C2A4102C7004A5C40 /* RegisterPhotoPickerManager.swift in Sources */,
+				8DB7C07C2A47FF7900B8014C /* WordsOfAffirmationView.swift in Sources */,
+				8D7B6EFC2A4808C400B2BDB2 /* AddCollageImageViewController.swift in Sources */,
 				839868342A4390D8004A5C40 /* Affirmation.swift in Sources */,
+				8D7B6F012A4808D000B2BDB2 /* DisplayCollageImageView.swift in Sources */,
 				8398685B2A47D968004A5C40 /* ImageUtils.swift in Sources */,
+				8D7B6EF72A4808BD00B2BDB2 /* CollageView.swift in Sources */,
+				8DB7C0742A47FF7100B8014C /* MeditationView.swift in Sources */,
 				839868302A428683004A5C40 /* CollageTableViewCell.swift in Sources */,
 				8398684E2A464D9B004A5C40 /* ProgressSpinnerViewController.swift in Sources */,
 				839868482A4524FC004A5C40 /* JournalTableViewManager.swift in Sources */,
 				839868462A4524DD004A5C40 /* JournalTableViewCell.swift in Sources */,
 				839867FC2A3D0C4A004A5C40 /* LandingPageView.swift in Sources */,
+				8DB7C0782A47FF7500B8014C /* JournalingPageViewController.swift in Sources */,
 				839868132A3FFC8E004A5C40 /* RegisterViewController.swift in Sources */,
 				839867EC2A3D0BCE004A5C40 /* ViewController.swift in Sources */,
+				8DB7C06F2A47FF6400B8014C /* InfoPageViewController.swift in Sources */,
+				8D7B6EFD2A4808C400B2BDB2 /* AddCollageImageView.swift in Sources */,
 				839868422A4524A4004A5C40 /* JournalViewController.swift in Sources */,
+				8D7B6EF82A4808BD00B2BDB2 /* CollageViewController.swift in Sources */,
 				839867E82A3D0BCE004A5C40 /* AppDelegate.swift in Sources */,
 				839868152A3FFC9E004A5C40 /* RegisterView.swift in Sources */,
 				839868202A4103F6004A5C40 /* HomePageViewController.swift in Sources */,
@@ -398,10 +449,11 @@
 				8398681E2A4103E8004A5C40 /* HomePageView.swift in Sources */,
 				8398682A2A411CDF004A5C40 /* ProfileViewController.swift in Sources */,
 				839868402A4523B1004A5C40 /* JournalView.swift in Sources */,
+				8DB7C0752A47FF7100B8014C /* MeditationViewController.swift in Sources */,
+				8DB7C0792A47FF7500B8014C /* JournalingPageView.swift in Sources */,
 				839868282A411CD2004A5C40 /* ProfileView.swift in Sources */,
 				839867EA2A3D0BCE004A5C40 /* SceneDelegate.swift in Sources */,
 				839868502A464DB1004A5C40 /* ProgressSpinnerDelegate.swift in Sources */,
-				839868572A46D765004A5C40 /* ImageViewUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -531,7 +583,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

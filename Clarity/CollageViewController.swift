@@ -116,7 +116,7 @@ extension CollageViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "collageimage", for: indexPath) as! CollageTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "collageimage", for: indexPath) as! CollageImageTableViewCell
         cell.labelText.text = collageImages[indexPath.row].location
         cell.imageCell.image = collageImages[indexPath.row].image!
         return cell

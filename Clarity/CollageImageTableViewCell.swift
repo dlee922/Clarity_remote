@@ -1,16 +1,15 @@
 //
-//  CollageTableViewCell.swift
+//  CollageImageTableViewCell.swift
 //  Clarity
 //
 //  Created by Isha Chadalavada on 6/24/23.
 //
 
-
 import UIKit
  
   
 
-class CollageTableViewCell: UITableViewCell {
+class CollageImageTableViewCell: UITableViewCell {
     
     var wrapperCellView: UIView!
     var imageCell: UIImageView!

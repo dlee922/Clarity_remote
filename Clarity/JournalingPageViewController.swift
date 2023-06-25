@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class JournalingPageViewController: UIViewController {
 
     var journalingScreen = JournalingPageView()
+    var currentUser:FirebaseAuth.User?
     
     override func loadView() {
         view = journalingScreen
@@ -20,9 +22,15 @@ class JournalingPageViewController: UIViewController {
         
         title = "Journaling"
         // Do any additional setup after loading the view.
+        journalingScreen.buttonJournaling.addTarget(self, action: #selector(onButtonJournalingTapped), for: .touchUpInside)
     }
     
-
+    @objc func onButtonJournalingTapped() {
+        let journalScreen = JournalViewController()
+        journalScreen.currentUser = currentUser
+        navigationController?.pushViewController(journalScreen, animated: true)
+  
+    }
     /*
     // MARK: - Navigation
 

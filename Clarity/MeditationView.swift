@@ -36,7 +36,6 @@ class MeditationView: UIView {
         setupMText8()
         setupMText9()
         
-        setupButtonMeditation()
         initConstraints()
     }
     
@@ -99,47 +98,38 @@ class MeditationView: UIView {
     }
     
     
-    
-    func setupButtonMeditation() {
-        buttonMeditation = UIButton(type: .system)
-        buttonMeditation.setTitle("Meditation Page", for: .normal)
-        buttonMeditation.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(buttonMeditation)
-    }
-    
+
     
     func initConstraints() {
         NSLayoutConstraint.activate([
             mText1.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 8),
             mText1.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText2.topAnchor.constraint(equalTo: mText1.topAnchor, constant: 2),
+            mText2.topAnchor.constraint(equalTo: mText1.bottomAnchor, constant: 2),
             mText2.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText3.topAnchor.constraint(equalTo: mText2.topAnchor, constant: 2),
+            mText3.topAnchor.constraint(equalTo: mText2.bottomAnchor, constant: 2),
             mText3.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText4.topAnchor.constraint(equalTo: mText3.topAnchor, constant: 2),
+            mText4.topAnchor.constraint(equalTo: mText3.bottomAnchor, constant: 2),
             mText4.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText5.topAnchor.constraint(equalTo: mText4.topAnchor, constant: 2),
+            mText5.topAnchor.constraint(equalTo: mText4.bottomAnchor, constant: 2),
             mText5.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText6.topAnchor.constraint(equalTo: mText5.topAnchor, constant: 2),
+            mText6.topAnchor.constraint(equalTo: mText5.bottomAnchor, constant: 2),
             mText6.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText7.topAnchor.constraint(equalTo: mText6.topAnchor, constant: 2),
+            mText7.topAnchor.constraint(equalTo: mText6.bottomAnchor, constant: 2),
             mText7.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText8.topAnchor.constraint(equalTo: mText7.topAnchor, constant: 2),
+            mText8.topAnchor.constraint(equalTo: mText7.bottomAnchor, constant: 2),
             mText8.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
-            mText9.topAnchor.constraint(equalTo: mText8.topAnchor, constant: 2),
+            mText9.topAnchor.constraint(equalTo: mText8.bottomAnchor, constant: 2),
             mText9.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             
             
-            buttonMeditation.topAnchor.constraint(equalTo: mText9.bottomAnchor, constant: 2),
-            buttonMeditation.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
            ])
     }
     

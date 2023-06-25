@@ -24,7 +24,7 @@ class CollageView: UIView {
     
     func setupImageTableView() {
         imageTableView = UITableView()
-        imageTableView.register(CollageTableViewCell.self, forCellReuseIdentifier: "collageimage")
+        imageTableView.register(CollageImageTableViewCell.self, forCellReuseIdentifier: "collageimage")
         imageTableView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(imageTableView)
     }

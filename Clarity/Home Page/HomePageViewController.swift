@@ -32,6 +32,8 @@ class HomePageViewController: UIViewController {
         homeScreen.buttonLocations.addTarget(self, action: #selector(onButtonLocationsTapped), for: .touchUpInside)
         homeScreen.buttonViewProfile.addTarget(self, action: #selector(onButtonViewProfileTapped), for: .touchUpInside)
         homeScreen.buttonViewInfo.addTarget(self, action: #selector(onButtonViewInfoTapped), for: .touchUpInside)
+        homeScreen.buttonCollage.addTarget(self, action: #selector(onButtonCollageTapped), for: .touchUpInside)
+        
         
         setupRightBarButton()
     }
@@ -87,7 +89,7 @@ class HomePageViewController: UIViewController {
                 }
                 //MARK: Display one of the strings inside of the affirmations array as the text for the label
                 if let receivedAffirmation = self.affirmations.randomElement() {
-                    self.homeScreen.labelAffirmation.text = receivedAffirmation.text
+                    self.homeScreen.labelAffirmation.text = self.homeScreen.tfAffirmation.text
                     self.saveReceivedAffirmationToUser(affirmation: receivedAffirmation)
                 }
             }
@@ -126,15 +128,16 @@ class HomePageViewController: UIViewController {
     
     @objc func onButtonViewInfoTapped() {
         let infoScreen = InfoPageViewController()
+        infoScreen.currentUser = currentUser
         navigationController?.pushViewController(infoScreen, animated: true)
-   
+
     }
-    
+
     @objc func onButtonCollageTapped() {
         let collageScreen = CollageViewController()
         collageScreen.databaseDelegate = self
-        navigationController?.pushViewController(infoScreen, animated: true)
-   
+        collageScreen.userName = currentUser!.email!
+        navigationController?.pushViewController(collageScreen, animated: true)
     }
     
     //MARK: alert for an empty text field

@@ -10,6 +10,7 @@ import UIKit
 class HomePageView: UIView {
 
     var buttonJournaling: UIButton!
+    var buttonCollage: UIButton!
     var tfAffirmation: UITextField!
     var labelAffirmation: UILabel!
     var buttonSubmitAffirmation: UIButton!
@@ -22,6 +23,7 @@ class HomePageView: UIView {
         backgroundColor = .white
         
         setupButtonJournaling()
+        setupButtonCollage()
         setupTFAffirmation()
         setupLabelAffirmation()
         setupButtonSubmitAffirmation()
@@ -46,6 +48,18 @@ class HomePageView: UIView {
         buttonJournaling.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(buttonJournaling)
     }
+    
+    func setupButtonCollage() {
+        buttonCollage = UIButton(type: .system)
+        buttonCollage.setTitle("Collage", for: .normal)
+        buttonCollage.tintColor = .white
+        buttonCollage.setBackgroundImage(.pixel(ofColor: .systemMint), for: .normal)
+        buttonCollage.layer.cornerRadius = 20
+        buttonCollage.layer.masksToBounds = true
+        buttonCollage.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(buttonCollage)
+    }
+    
     
     func setupTFAffirmation() {
         tfAffirmation = UITextField()
@@ -117,7 +131,14 @@ class HomePageView: UIView {
             buttonJournaling.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -100),
             buttonJournaling.heightAnchor.constraint(equalToConstant: 40),
             
-            tfAffirmation.topAnchor.constraint(equalTo: buttonJournaling.bottomAnchor, constant: 100),
+            
+            buttonCollage.topAnchor.constraint(equalTo: buttonJournaling.topAnchor, constant: 100),
+            buttonCollage.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            buttonCollage.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 100),
+            buttonCollage.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -100),
+            buttonCollage.heightAnchor.constraint(equalToConstant: 40),
+            
+            tfAffirmation.topAnchor.constraint(equalTo: buttonCollage.bottomAnchor, constant: 100),
             tfAffirmation.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             tfAffirmation.heightAnchor.constraint(equalToConstant: 56),
             

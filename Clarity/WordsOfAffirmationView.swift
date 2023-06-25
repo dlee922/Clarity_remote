@@ -19,7 +19,6 @@ class WordsOfAffirmationView: UIView {
     var wOAT8:UITextField!
     var emptyLabel:UITextField!
     
-    var buttonWordsOfAffirmation:UIButton!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,7 +35,6 @@ class WordsOfAffirmationView: UIView {
         setupWOAT6()
         setupWOAT7()
         setupWOAT8()
-        setupButtonWordsOfAffirmation()
         initConstraints()
     }
     
@@ -103,17 +101,7 @@ class WordsOfAffirmationView: UIView {
         self.addSubview(wOAT8)
     }
 
-    
-    
-    func setupButtonWordsOfAffirmation() {
-        buttonWordsOfAffirmation = UIButton(type: .system)
-        buttonWordsOfAffirmation.setTitle("Words of Affirmation Page", for: .normal)
-        buttonWordsOfAffirmation.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(buttonWordsOfAffirmation)
-    }
-    
-    
-    
+  
     func initConstraints() {
         NSLayoutConstraint.activate([
             wOAT1.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -142,10 +130,7 @@ class WordsOfAffirmationView: UIView {
             
             wOAT8.topAnchor.constraint(equalTo: wOAT7.bottomAnchor, constant: 2),
             wOAT8.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            
-            buttonWordsOfAffirmation.topAnchor.constraint(equalTo: wOAT8.bottomAnchor),
-            buttonWordsOfAffirmation.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            
+          
             ])
     }
     

@@ -21,8 +21,10 @@ class WordsOfAffirmationViewController: UIViewController {
         
         title = "Words of Affirmation"
         // Do any additional setup after loading the view.
+        
     }
     
+
 
     /*
     // MARK: - Navigation

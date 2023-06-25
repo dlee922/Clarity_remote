@@ -9,7 +9,7 @@ import UIKit
 
 class InfoPageView: UIView {
     
-    var labelTitle:UILabel!
+
     var tableViewInfoPage: UITableView!
     
 
@@ -19,18 +19,11 @@ class InfoPageView: UIView {
         
         //MARK: initializing a TableView...
         
-        setupLabelTitle()
         setupTableViewInfoPage()
         initConstraints()
     }
     
-    func setupLabelTitle() {
-        print("in here")
-        labelTitle = UILabel()
-        labelTitle.text = "Information Page"
-        labelTitle.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(labelTitle)
-    }
+
     
     func setupTableViewInfoPage(){
         tableViewInfoPage = UITableView()
