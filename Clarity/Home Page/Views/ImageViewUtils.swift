@@ -10,6 +10,7 @@ import UIKit
 
 extension UIImageView {
     
+    //MARK: loading image from Firestore storage
     func loadRemoteImage(from url: URL) {
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url) {
