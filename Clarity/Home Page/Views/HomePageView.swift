@@ -14,7 +14,6 @@ class HomePageView: UIView {
     var tfAffirmation: UITextField!
     var labelAffirmation: UILabel!
     var buttonSubmitAffirmation: UIButton!
-    var buttonLocations: UIButton!
     var buttonViewProfile: UIButton!
     var buttonViewInfo: UIButton!
     
@@ -27,7 +26,6 @@ class HomePageView: UIView {
         setupTFAffirmation()
         setupLabelAffirmation()
         setupButtonSubmitAffirmation()
-        setupButtonLocations()
         setupButtonViewProfile()
         setupButtonViewInfo()
         
@@ -88,19 +86,6 @@ class HomePageView: UIView {
         self.addSubview(buttonSubmitAffirmation)
     }
     
-    func setupButtonLocations() {
-        buttonLocations = UIButton(type: .system)
-        buttonLocations.setTitle("", for: .normal)
-        buttonLocations.setImage(UIImage(systemName: "location.circle.fill")?.withRenderingMode(.alwaysOriginal), for: .normal)
-        //buttonTakePhoto.setImage(UIImage(systemName: "camera.fill")?.withRenderingMode(.alwaysOriginal), for: .normal)
-        buttonLocations.contentHorizontalAlignment = .fill
-        buttonLocations.contentVerticalAlignment = .fill
-        buttonLocations.imageView?.contentMode = .scaleAspectFit
-        buttonLocations.showsMenuAsPrimaryAction = true
-        buttonLocations.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(buttonLocations)
-    }
-    
     func setupButtonViewProfile() {
         buttonViewProfile = UIButton(type: .system)
         buttonViewProfile.setTitle("View Profile", for: .normal)
@@ -149,19 +134,14 @@ class HomePageView: UIView {
                                                     
             labelAffirmation.topAnchor.constraint(equalTo: buttonSubmitAffirmation.bottomAnchor, constant: 16),
             labelAffirmation.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            
-            buttonLocations.topAnchor.constraint(equalTo: labelAffirmation.bottomAnchor, constant: 16),
-            buttonLocations.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            buttonLocations.heightAnchor.constraint(equalToConstant: 100),
-            buttonLocations.widthAnchor.constraint(equalToConstant: 100),
              
-            buttonViewProfile.topAnchor.constraint(equalTo: buttonLocations.bottomAnchor, constant: 16),
+            buttonViewProfile.topAnchor.constraint(equalTo: labelAffirmation.bottomAnchor, constant: 32),
             buttonViewProfile.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 32),
             buttonViewProfile.heightAnchor.constraint(equalToConstant: 40),
             buttonViewProfile.widthAnchor.constraint(equalToConstant: 150),
             buttonViewProfile.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: 16),
             
-            buttonViewInfo.topAnchor.constraint(equalTo: buttonLocations.bottomAnchor, constant: 16),
+            buttonViewInfo.topAnchor.constraint(equalTo: labelAffirmation.bottomAnchor, constant: 32),
             buttonViewInfo.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -32),
             buttonViewInfo.heightAnchor.constraint(equalToConstant: 40),
             buttonViewInfo.widthAnchor.constraint(equalToConstant: 150),
