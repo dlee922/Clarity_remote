@@ -29,7 +29,6 @@ class HomePageViewController: UIViewController {
         // Do any additional setup after loading the view.
         homeScreen.buttonJournaling.addTarget(self, action: #selector(onButtonJournalingTapped), for: .touchUpInside)
         homeScreen.buttonSubmitAffirmation.addTarget(self, action: #selector(onButtonSubmitTapped), for: .touchUpInside)
-        homeScreen.buttonLocations.addTarget(self, action: #selector(onButtonLocationsTapped), for: .touchUpInside)
         homeScreen.buttonViewProfile.addTarget(self, action: #selector(onButtonViewProfileTapped), for: .touchUpInside)
         homeScreen.buttonViewInfo.addTarget(self, action: #selector(onButtonViewInfoTapped), for: .touchUpInside)
         homeScreen.buttonCollage.addTarget(self, action: #selector(onButtonCollageTapped), for: .touchUpInside)
@@ -114,10 +113,6 @@ class HomePageViewController: UIViewController {
                 print("Error adding affirmation")
             }
         }
-    }
-    
-    @objc func onButtonLocationsTapped() {
-        
     }
     
     @objc func onButtonViewProfileTapped() {
